@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decendant Selector</title>
+    <style>
+        
+        .parent{
+            border: 4px double black;
+        }
+        .child{
+            border: 4px dotted blue;
+        }
+        .parent h1{
+            background-color: brown;
+            color: aqua;
+            text-align: center;
+        }
+        .parent p{
+            font-size: 20px;
+            background-color: blue;
+            color: palevioletred;
+
+        }
+
+        .child p{
+            font-size: 20px;
+            background-color: cadetblue;
+            color: brown;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent"> <!-- this is a Parent -->
+        <h1>Decendant Selector</h1>
+        <p>This Is Paragraph01</p><!-- This is a Child -->
+        <p>This Is Paragraph02</p><!-- This is a Child -->
+        <p>This Is Paragraph03</p><!-- This is a Child -->
+        <p>This Is Paragraph04</p><!-- This is a Child -->
+        <div class="child"><!-- This is a Child -->
+            <p>This is a Child Paragraph01</p><!-- This is Child of Child -->
+            <p>This is a Child Paragraph02</p><!-- This is Child of Child -->
+            <p>This is a Child Paragraph03</p><!-- This is Child of Child -->
+            <p>This is a Child Paragraph04</p><!-- This is Child of Child -->
+        </div>
+        <p>This is also Paragraph</p><!-- This is a Child -->
+        <p>This is also Paragraph</p><!-- This is a Child -->
+        
+    </div>
+</body>
+</html>
